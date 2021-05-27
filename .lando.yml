@@ -1,0 +1,10 @@
+name: nest
+
+services:
+  node:
+    type: node:14
+    build:
+      - npm install
+    globals:
+      "@nestjs/cli": latest
+      typescript: latest
