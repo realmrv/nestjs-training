@@ -275,6 +275,144 @@
 			]
 		},
 		{
+			"name": "TopPage",
+			"item": [
+				{
+					"name": "find",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"firstLevelCategory\": 1\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/top-page/find",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"top-page",
+								"find"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"firstLevelCategory\": 1,\n  \"secondLevelCategory\": \"Разработка\",\n  \"alias\": \"typescript\",\n  \"title\": \"Курсы по TypeScript\",\n  \"category\": \"typescript\",\n  \"hh\": {\n    \"count\": 1000,\n    \"juniorSalary\": 120000,\n    \"middleSalary\": 200000,\n    \"seniorSalary\": 300000\n  },\n  \"advantages\": [{\n    \"title\": \"Скорость разработки\",\n    \"description\": \"Мое описание\"\n  }],\n  \"seoText\": \"тест\",\n  \"tagsTitle\": \"Полученные знания\",\n  \"tags\": [\"TypeScript\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/top-page/create",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"top-page",
+								"create"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"firstLevelCategory\": 1,\n  \"secondLevelCategory\": \"Разработка\",\n  \"alias\": \"typescript\",\n  \"title\": \"Курсы по TypeScript\",\n  \"category\": \"typescript\",\n  \"hh\": {\n    \"count\": 1000,\n    \"juniorSalary\": 120000,\n    \"middleSalary\": 200000,\n    \"seniorSalary\": 300000\n  },\n  \"advantages\": [{\n    \"title\": \"Скорость разработки\",\n    \"description\": \"Мое описание\"\n  }],\n  \"seoText\": \"тест\",\n  \"tagsTitle\": \"Полученные знания\",\n  \"tags\": [\"TypeScript\"]\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/top-page/60c903879ba8393fdcf68608",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"top-page",
+								"60c903879ba8393fdcf68608"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/top-page/60c9031d9ba8393fdcf68604",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"top-page",
+								"60c9031d9ba8393fdcf68604"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "byAlias",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/api/top-page/byAlias/typescript",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"top-page",
+								"byAlias",
+								"typescript"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
 			"name": "hello",
 			"request": {
 				"method": "GET",

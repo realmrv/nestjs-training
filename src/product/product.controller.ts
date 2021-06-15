@@ -11,7 +11,6 @@ import {
   UsePipes,
   ValidationPipe,
 } from '@nestjs/common';
-import { ProductModel } from './product.model';
 import { FindProductDto } from './dto/find-product.dto';
 import { ProductDto } from './dto/product.dto';
 import { ProductService } from './product.service';
@@ -50,7 +49,7 @@ export class ProductController {
   @Patch(':id')
   async patch(
     @Param('id', IdValidationPipe) id: string,
-    @Body() dto: ProductModel,
+    @Body() dto: ProductDto,
   ) {
     const updatedProduct = await this.productService.updateById(id, dto);
     if (!updatedProduct) {
