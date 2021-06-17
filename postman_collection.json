@@ -155,6 +155,36 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "notify",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"name\": \"Тест 1\",\r\n  \"title\": \"Заголовок\",\r\n  \"description\": \"Описание\",\r\n  \"rating\": 4,\r\n  \"productId\": \"60c741da905b802cbea2b0e6\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/review/notify",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"review",
+								"notify"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"auth": {
