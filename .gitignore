@@ -38,3 +38,6 @@ mongo-data
 
 # Environment
 .env
+
+# Uploads
+/uploads

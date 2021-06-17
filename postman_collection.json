@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "8662ce11-e049-4327-940d-6498ad33a6aa",
+		"_postman_id": "d61caa7d-ce41-43e0-8ea6-a2ba8be6627a",
 		"name": "nestjs-training",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -162,7 +162,7 @@
 				"bearer": [
 					{
 						"key": "token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5ydSIsImlhdCI6MTYyMzc5MDA5M30.xbjhpa2gLJE7ZnsuJMxSshU2XsE_adXb_OroXuh7RNg",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5ydSIsImlhdCI6MTYyMzg3MDEzMn0.STDo-xWjq9z6mm20oZA7aMAVMWPol3y0ASvTnAjonoU",
 						"type": "string"
 					}
 				]
@@ -308,7 +308,7 @@
 				"bearer": [
 					{
 						"key": "token",
-						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5ydSIsImlhdCI6MTYyMzc5MDA5M30.xbjhpa2gLJE7ZnsuJMxSshU2XsE_adXb_OroXuh7RNg",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5ydSIsImlhdCI6MTYyMzg3MDEzMn0.STDo-xWjq9z6mm20oZA7aMAVMWPol3y0ASvTnAjonoU",
 						"type": "string"
 					}
 				]
@@ -498,6 +498,93 @@
 					{
 						"key": "token",
 						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5ydSIsImlhdCI6MTYyMzc5MDA5M30.xbjhpa2gLJE7ZnsuJMxSshU2XsE_adXb_OroXuh7RNg",
+						"type": "string"
+					}
+				]
+			},
+			"event": [
+				{
+					"listen": "prerequest",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				},
+				{
+					"listen": "test",
+					"script": {
+						"type": "text/javascript",
+						"exec": [
+							""
+						]
+					}
+				}
+			]
+		},
+		{
+			"name": "Files",
+			"item": [
+				{
+					"name": "upload",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "files",
+									"type": "file",
+									"src": "/C:/Users/mrv/Downloads/Man-Silhouette.jpg"
+								}
+							]
+						},
+						"url": {
+							"raw": "http://localhost:3000/api/files/upload",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"files",
+								"upload"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "get-static",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://localhost:3000/static/2021-06-17/Man-Silhouette.jpg",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"static",
+								"2021-06-17",
+								"Man-Silhouette.jpg"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"auth": {
+				"type": "bearer",
+				"bearer": [
+					{
+						"key": "token",
+						"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6ImFAYS5ydSIsImlhdCI6MTYyMzg3MDEzMn0.STDo-xWjq9z6mm20oZA7aMAVMWPol3y0ASvTnAjonoU",
 						"type": "string"
 					}
 				]
